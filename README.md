@@ -13,9 +13,9 @@ Basically, the word2vec dictionary is trained in TF with architecture:
   * dense (Dense)                (None, 128)               8320      
   * dense_1 (Dense)              (None, 5)                 645       
 
-Then, load weights from word2vec into pytorch-GPU.
+Then, load weights from word2vec into pytorch.
 
-Finally, train Sequential model with architecture:
+Finally, train Sequential model on GPU with architecture:
 
   * (embedding): Embedding(10000, 64)
   * (lstm): LSTM(64, 256, num_layers=2, batch_first=True, dropout=0.1)
