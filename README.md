@@ -8,7 +8,6 @@ I'm playing with tensorflow and pytorch for LSTM model, on yelp review classific
 
 Basically, the word2vec dictionary is trained in TF with architecture:
 
-  * Layer (type)                 Output Shape              Param #   
   * embedding (Embedding)        (None, 250, 64)           640000    
   * global_average_pooling1d (Gl (None, 64)                0         
   * dense (Dense)                (None, 128)               8320      
